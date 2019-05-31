@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Python-Basic:Datatypes | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Comprehensive List of Python DatatypesNumeric Types int long float complexNote: In Python 3, both int and long belong to int, whereas python 2 distinguishes between the 2 datatypesSequence Types str l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python-Basic:Datatypes">
+<meta property="og:url" content="http://yoursite.com/2019/05/30/Python-Basic-Datatypes/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Comprehensive List of Python DatatypesNumeric Types int long float complexNote: In Python 3, both int and long belong to int, whereas python 2 distinguishes between the 2 datatypesSequence Types str l">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-31T06:34:36.503Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python-Basic:Datatypes">
+<meta name="twitter:description" content="Comprehensive List of Python DatatypesNumeric Types int long float complexNote: In Python 3, both int and long belong to int, whereas python 2 distinguishes between the 2 datatypesSequence Types str l">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Python-Basic-Datatypes" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/30/Python-Basic-Datatypes/" class="article-date">
+  <time datetime="2019-05-30T13:20:37.000Z" itemprop="datePublished">2019-05-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Python-Basic:Datatypes
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Comprehensive-List-of-Python-Datatypes"><a href="#Comprehensive-List-of-Python-Datatypes" class="headerlink" title="Comprehensive List of Python Datatypes"></a>Comprehensive List of Python Datatypes</h2><h3 id="Numeric-Types"><a href="#Numeric-Types" class="headerlink" title="Numeric Types"></a>Numeric Types</h3><ul>
+<li>int</li>
+<li>long</li>
+<li>float</li>
+<li>complex<br><em>Note</em>: In Python 3, both int and long belong to int, whereas python 2 distinguishes between the 2 datatypes<h3 id="Sequence-Types"><a href="#Sequence-Types" class="headerlink" title="Sequence Types"></a>Sequence Types</h3></li>
+<li>str</li>
+<li>list</li>
+<li>tuple</li>
+<li>dict<h3 id="Other-Types"><a href="#Other-Types" class="headerlink" title="Other Types"></a>Other Types</h3></li>
+<li>bool</li>
+<li>none</li>
+</ul>
+<h2 id="Checking-Datatypes-and-Datatype-Conversion"><a href="#Checking-Datatypes-and-Datatype-Conversion" class="headerlink" title="Checking Datatypes and Datatype Conversion"></a>Checking Datatypes and Datatype Conversion</h2><p>To test the datatype of a variable or a given input, for example:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> type(<span class="number">2</span>+<span class="number">3j</span>)    <span class="comment">#This returns &lt;type 'complex'&gt;</span></span><br></pre></td></tr></table></figure>
+<p>One can also convert simple datatypes from one to the other through the following 2 ways:</p>
+<ol>
+<li>Explicit conversion: Truncation occurs if turning <strong>float type</strong> into <strong>int type</strong><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int(<span class="number">2.7375</span>)    <span class="comment">#This returns 2</span></span><br><span class="line"><span class="number">2</span>/<span class="number">3</span>            <span class="comment">#This returns 0</span></span><br><span class="line">float(<span class="number">2</span>)/<span class="number">3</span>     <span class="comment">#This returns 0.666666666667, so as 2/float(3)</span></span><br></pre></td></tr></table></figure></li>
+<li>For converting a list into string: Use a loop structure or use list.join(‘’) function.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">list_word = [<span class="string">'I'</span>,<span class="string">'am'</span>,<span class="string">'into'</span>,<span class="string">'programming'</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list_word:</span><br><span class="line">    <span class="keyword">print</span> i,                     <span class="comment">#This loop combines list items into string, must have comma</span></span><br><span class="line"><span class="keyword">print</span> str(list_word).join(<span class="string">''</span>)    <span class="comment">#This also returns 'I am into programming'</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/30/Python-Basic-Datatypes/" data-id="cjwbqc23y0001ltyboxphnkxg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/05/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/30/Python-Basic-Datatypes/">Python-Basic:Datatypes</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/30/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Michelle Zhou<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
